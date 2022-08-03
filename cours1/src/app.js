@@ -1,12 +1,12 @@
-const CONSTANT_VAR = [1, "我是字符串", true];
+const CONSTANT_VAR = [{ age: 1 }, 1, "我是字符串", true];
 type1 = "我是字符串";
-console.log(typeof type1)
+console.log(typeof type1);
 
 type1 = 1;
-console.log(typeof type1)
+console.log(typeof type1);
 
 type1 = true;
-console.log(typeof type1)
+console.log(typeof type1);
 
 type1 = [1, "我是字符串", true];
 console.log(typeof type1);
