@@ -38,11 +38,11 @@ if (isAdult(person2.age)) {
     console.log("p2 成年人")
 }
 
-const persons = [person1, person2, person3];
+// const persons = [person1, person2, person3];
 // persons.push(person1);
 // persons.push(person2);
 // persons.push(person3);
-console.log(persons)
+// console.log(persons)
 
 // 遍历
 // const table = [1, 2, 3, 99, 5, 6, 7, 123, 999];
@@ -50,3 +50,32 @@ console.log(persons)
 // for (var index = 0; index < table.length; index++) {
 //     console.log(table[index]);
 // }
+
+//------------------------------------------
+const p1 = {
+    name: "p1",
+    age: 8,
+    sex: "男"
+};
+const p2 = {
+    name: "p2",
+    age: 18,
+    sex: "男"
+};
+
+const p3 = {
+    name: "p3",
+    age: 19,
+    sex: "女"
+};
+
+const p4 = {
+    name: "p4",
+    age: 91,
+    sex: "女"
+};
+
+const persons = [p1, p2, p3, p4];
+
+// f(persons,"性别")=> [{xx},{xxx},...]
+// 写一个函数，（参数1 为 persons 数组，参数2为性别），返回一个数组（符合性别条件的数组）
