@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>你好</title>
+    <script>
+        function sayHello(name) {
+            console.log("sayHello 运行了");
+            return { msg: "你好", name };
+        }
+        // document.write('Pour se dire aurevoir');
+
+        // sayHello();
+        // const result = sayHello("js");
+        // console.log("拿到 sayHello 的结果");
+        // result.msg = "coucou";
+        // console.log(result);
+    </script>
+</head>
+
+<body>
+    <a href="javascript:alert('alsdlasjkd');">点击这里alert</a>
+    <br>
+    <a href="javascript:sayHello('alsdlasjkd');">sayHello();</a>
+    <p>
+        <script language="javascript">
+            document.write('Pour se dire aurevoir');
+            /* inutile de passer par js (pourquoi ?)*/
+        </script>
+        <br /><a href="javascript:sayHello();">cliquez ici</a>
+        <br />ou passez la souris sur
+        <a href="" onMouseOver="sayHello();">ce lien</a>
+    </p>
+</body>
+
+</html>

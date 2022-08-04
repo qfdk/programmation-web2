@@ -47,9 +47,10 @@ if (isAdult(person2.age)) {
 // 遍历
 // const table = [1, 2, 3, 99, 5, 6, 7, 123, 999];
 
-// for (var index = 0; index < table.length; index++) {
-//     console.log(table[index]);
-// }
+for (var index = 0; index < table.length; index++) {
+    const currentVal = table[index];
+    console.log(currentVal);
+}
 
 //------------------------------------------
 const p1 = {
@@ -79,3 +80,12 @@ const persons = [p1, p2, p3, p4];
 
 // f(persons,"性别")=> [{xx},{xxx},...]
 // 写一个函数，（参数1 为 persons 数组，参数2为性别），返回一个数组（符合性别条件的数组）
+
+
+// 1. 声明 一个新的空数组 newList 来存放结果
+// 2. 遍历 persons
+    // - 取到当前的 persons[index] 并赋值给新的 currentPerson
+    // - 对 currentPerson 进行条件判断
+    // - 符合条件 将 currentPerson 加入到 newList 数组中
+// 遍历结束
+// 3. 返回 newList  数组
