@@ -46,9 +46,13 @@
 // 基本规则 参数不是必须的！！！
 // function 函数名称 (参数1，参数2...,){}
 function sayHello(name) {
-    return "你好" + name;
+    console.log("sayHello 运行了");
+    return { msg: "你好", name };
 }
 
 // sayHello();
 const result = sayHello("js");
+console.log("拿到 sayHello 的结果");
+result.msg = "coucou";
 console.log(result);
+// console.log(sayHello("js"));
