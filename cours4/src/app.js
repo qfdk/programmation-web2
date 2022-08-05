@@ -7,7 +7,14 @@ const person1 = {
 };
 console.log(person1);
 // 把p1 的值都复制给p2
-const person2 = { ...person1, name: "你好p2", isChinese: true, age: 16 };
+const person2 = {
+    ...person1,
+    name: "你好p2", isChinese: true, age: 16,
+    test: {
+        mark: "BWM"
+    }
+};
+console.log(person2.test.mark);
 
 const person3 = {
     age: 22,
