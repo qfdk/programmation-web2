@@ -45,7 +45,7 @@ if (isAdult(person2.age)) {
 // console.log(persons)
 
 // 遍历
-// const table = [1, 2, 3, 99, 5, 6, 7, 123, 999];
+const table = [1, 2, 3, 99, 5, 6, 7, 123, 999];
 
 for (var index = 0; index < table.length; index++) {
     const currentVal = table[index];
@@ -84,8 +84,57 @@ const persons = [p1, p2, p3, p4];
 
 // 1. 声明 一个新的空数组 newList 来存放结果
 // 2. 遍历 persons
-    // - 取到当前的 persons[index] 并赋值给新的 currentPerson
-    // - 对 currentPerson 进行条件判断
-    // - 符合条件 将 currentPerson 加入到 newList 数组中
+// - 取到当前的 persons[index] 并赋值给新的 currentPerson
+// - 对 currentPerson 进行条件判断
+// - 符合条件 将 currentPerson 加入到 newList 数组中
 // 遍历结束
 // 3. 返回 newList  数组
+
+function findPersonsBySex(personList, inputSex) {
+    const results = [];
+    for (var i = 0; i < personList.length; i++) {
+        const currentPerson = personList[i];
+
+        if (currentPerson.sex === inputSex) {
+            results.push(currentPerson);
+        }
+    }
+
+    return results;
+}
+
+const hommeList = findPersonsBySex(persons, "男");
+
+console.log(hommeList);
+
+const femmeList = persons.filter(p => p.sex === "女");
+console.log(femmeList);
+
+
+function findPersonsBySex2(personList, inputSex) {
+    return personList.filter(p => p.sex === inputSex)
+}
+
+const findPersonsBySex3 = (personList, inputSex) => personList.filter(p => p.sex === inputSex);
+
+const femmeList2 = findPersonsBySex3(persons, "女");
+console.log(femmeList2);
+
+
+const numberList = [9, 3, 4, 1, 3, 5, 243, 432, 5, 452345];
+
+function findNumberByTarget(inputArray, target) {
+    const results = [];
+    for (var i = 0; i < inputArray.length; i++) {
+        const currentNumber = inputArray[i];
+
+        if (currentNumber >= target) {
+            results.push(currentNumber);
+        }
+    }
+    return results;
+}
+
+const myNumber = findNumberByTarget(numberList, 200);
+
+console.log(myNumber);
